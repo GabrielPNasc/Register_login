@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmação de Código</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/confirmation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<script src="/static/index.js"></script>
+<body>
+    <div class="container">
+        <form class="confirmation-form" method="POST" action="/confirmar_codigo">
+            <h2><i class="fas fa-shield-alt"></i> Confirmação de Código</h2>
+            <p class="info">Digite o código que enviamos para seu e-mail:</p>
+            <div class="input-group">
+                <label for="codigo">Código de confirmação</label>
+                <div class="code-input">
+                    <input type="text" name="codigo1" maxlength="1" required autocomplete="off">
+                    <input type="text" name="codigo2" maxlength="1" required autocomplete="off">
+                    <input type="text" name="codigo3" maxlength="1" required autocomplete="off">
+                    <input type="text" name="codigo4" maxlength="1" required autocomplete="off">
+                    <input type="text" name="codigo5" maxlength="1" required autocomplete="off">
+                    <input type="text" name="codigo6" maxlength="1" required autocomplete="off">
+                </div>
+            </div>
+            <button type="submit">Confirmar</button>
+        </form>
+    </div>
+</body>
+</html>

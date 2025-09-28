@@ -1,0 +1,107 @@
+body {
+    background: linear-gradient(135deg, #261f3a 0%, #281c47 100%);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: rgba(19, 19, 19, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(90, 2, 255, 0.37);
+    padding: 40px 32px;
+    width: 350px;
+    animation: fadeIn 1.2s cubic-bezier(.39,.575,.565,1) both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-40px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+.confirmation-form h2 {
+    color: #fff;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.confirmation-form .info {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-group label {
+    color: #bbb;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.code-input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.code-input input {
+    width: 40px;
+    height: 48px;
+    text-align: center;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 3px solid #5900ff;
+    background:  rgba(19, 19, 19, 0.95);
+    color: #fff;
+    outline: none;
+    border-radius: 0;
+    transition: border-color 0.3s, background 0.3s;
+    /* Removido: box-shadow: 0 2px 8px rgba(0,0,0,0.15); */
+    letter-spacing: 2px;
+}
+
+.code-input input:focus {
+    background: #333;
+    border-bottom: 3px solid #9864f7;
+    /* Removido: box-shadow: 0 0 0 2px #4e54c8; */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #5900ff 0%, #9864f7 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(78,84,200,0.15);
+    margin-top: 8px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #8f94fb 0%, #4e54c8 100%);
+    transform: translateY(-2px) scale(1.03);
+}
